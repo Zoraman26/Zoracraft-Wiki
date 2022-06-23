@@ -4,7 +4,7 @@
 -----
 # Local dev server
 
-## Steps for editing and/or developing the wiki:
+## Steps for starting to edit and/or develop the wiki:
 
 0. Install node.js if `node` is not present in terminal. [See guide next section.](#install-and-manage-nodejs)
 
