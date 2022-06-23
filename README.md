@@ -8,7 +8,7 @@
 
 0. Install node.js if `node` is not present in terminal. [See guide next section.](#install-and-manage-nodejs)
 
-1. Clone repository: `git clone https://github.com/Zoraman26/ZoraCraft.git`
+1. Clone repository: `git clone https://github.com/Zoraman26/ZoraCraft-Wiki.git`
 
 2. Install [TiddlyWiki](https://tiddlywiki.com/): `npm install -g tiddlywiki`
 
