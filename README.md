@@ -16,3 +16,7 @@
 * https://tiddlywiki.com/#TiddlerFiles
 * https://tiddlywiki.com/#TiddlyWikiFolders
 * https://tiddlywiki.com/#Using%20the%20read-only%20single%20tiddler%20view
+
+### Optimizations
+####   Greatly reduce image file size
+* https://avif.io/
