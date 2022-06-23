@@ -4,21 +4,23 @@
 -----
 # Local dev server
 
-## Steps to get up running for editing and/or developing the wiki.
+## Steps for editing and/or developing the wiki:
 
-0. Install node.js if `node` is not present in terminal. [Quick guide further down page.](#install-and-manage-nodejs)
+0. Install node.js if `node` is not present in terminal. [See guide next section.](#install-and-manage-nodejs)
 
-1. `git clone https://github.com/Zoraman26/ZoraCraft.git`
+1. Clone repository: `git clone https://github.com/Zoraman26/ZoraCraft.git`
 
-2. 
+2. Install [TiddlyWiki](https://tiddlywiki.com/): `npm install -g tiddlywiki`
 
-3.
+3. Launch TiddlyWiki node.js server on localhost: `tiddlywiki wikifolder --listen` Choose port by adding ` port=####` 
 
-4.
+4. Open browser to TiddlyWiki instance. Default location: http://127.0.0.1:8080/
 
+-----
 
+## Prerequisites
 
-## Install and manage node.js 
+### Install and manage node.js 
 
 If you do not already have node.js installed, it is recommended to do so using [nvm](https://github.com/nvm-sh/nvm#intro), the node version manager: 
 
