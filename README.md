@@ -6,7 +6,7 @@
 
 ## Steps to get up running for editing and/or developing the wiki.
 
-0. Install node.js if `node` not present in terminal. [Quick guide further down page.](Using-nvm-to-install-and-manage-node-js)
+0. Install node.js if `node` not present in terminal. [Quick guide further down page.](#install-and-manage-node-js)
 
 1. `git clone https://github.com/Zoraman26/ZoraCraft.git`
 
@@ -18,9 +18,9 @@
 
 
 
-## Using [nvm](https://github.com/nvm-sh/nvm#intro) to install and manage node.js 
+## Install and manage node.js 
 
-If you do not already have node.js installed, it is recommended to do so using the node version manager: 
+If you do not already have node.js installed, it is recommended to do so using [nvm](https://github.com/nvm-sh/nvm#intro), the node version manager: 
 
 1. Install [nvm](https://github.com/nvm-sh/nvm#install--update-script) using **one** of these commands:
 
