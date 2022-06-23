@@ -6,7 +6,7 @@
 
 ## Steps to get up running for editing and/or developing the wiki.
 
-0. Install node.js if `node` is not present in terminal. [Quick guide further down page.](#install-and-manage-node-js)
+0. Install node.js if `node` is not present in terminal. [Quick guide further down page.](#install-and-manage-nodejs)
 
 1. `git clone https://github.com/Zoraman26/ZoraCraft.git`
 
