@@ -1,4 +1,4 @@
-## Using [nvm](https://github.com/nvm-sh/nvm#intro) to install and manage nodejs 
+## Using [nvm](https://github.com/nvm-sh/nvm#intro) to install and manage node.js 
 
 #### If you do not already have node.js installed on your machine, it is recommended to do so using the node version manager: 
 
