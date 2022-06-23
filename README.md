@@ -1,5 +1,21 @@
 # Zoracraft-Wiki
-### Using Tiddlywiki, Node.js edition
+### Tiddlywiki + Node.js edition
+
+-----
+## Local dev server
+
+Steps to get up running for editing and/or developing the wiki:
+
+0. Requires nodejs, and the presence of its package manager in your terminal. Quick steps if nodejs is not installed.
+
+1. `git clone https://github.com/Zoraman26/ZoraCraft.git`
+
+2.
+
+3.
+
+4.
+
 
 -----
 
