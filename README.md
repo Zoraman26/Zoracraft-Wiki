@@ -8,13 +8,17 @@
 
 0. Install node.js if `node` is not present in terminal. [See guide next section.](#install-and-manage-nodejs)
 
-1. Clone repository: `git clone https://github.com/Zoraman26/ZoraCraft-Wiki.git`
+1. Clone repository: `git clone https://github.com/Zoraman26/ZoraCraft-Wiki.git` 
+
+3. Switch to the dev branch: `git checkout dev`
+
+2. `cd ZoraCraft-Wiki/`
 
 2. Install [TiddlyWiki](https://tiddlywiki.com/): `npm install -g tiddlywiki`
 
-3. Launch TiddlyWiki node.js server on localhost: `tiddlywiki wikifolder --listen port=8080` 
+3. Launch TiddlyWiki node.js server on localhost: `tiddlywiki zoracraft-wiki-dev --listen` 
 
-4. Open browser to TiddlyWiki instance. Default location: http://127.0.0.1:8080/
+4. Open browser to TiddlyWiki instance: http://127.0.0.1:8080/
 
 5. Start editing!! :D More steps to follow.
 
