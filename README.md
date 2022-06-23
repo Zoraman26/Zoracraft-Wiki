@@ -6,11 +6,11 @@
 
 ## Steps to get up running for editing and/or developing the wiki.
 
-0. Install node.js if `node` not present in terminal. [Quick guide further down page.](#install-and-manage-node-js)
+0. Install node.js if `node` is not present in terminal. [Quick guide further down page.](#install-and-manage-node-js)
 
 1. `git clone https://github.com/Zoraman26/ZoraCraft.git`
 
-2.
+2. 
 
 3.
 
@@ -28,9 +28,9 @@ cURL: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh 
 
 Wget: `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
 
-2. Install latest node.js LTS version `nvm install 16`
+2. Install latest node.js LTS version: `nvm install 16`
 
-3. Check that node is available from the command line. `node -v`
+3. Check that node is available from the command line: `node -v`
 
 ### You're done!
 
