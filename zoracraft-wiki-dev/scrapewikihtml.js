@@ -1,10 +1,12 @@
 /*
 	Renders an HTML file for every TiddlyWiki page [excludes settings pages]
+	Optimization is WIP
 */
 
 const http = require('http');
 const path = require('path');
-const { writeFile, readdir } = require('fs');
+const { readdir } = require('fs');
+const { writeFile } = require('fs/promises');
 
 const { port, directories, skipTiddlers } = require('./config.json');
 
@@ -21,12 +23,13 @@ readdir(directories.tiddlers, (error, tiddlers) => {
 	else {
 		tiddlers
 		.filter(tiddlyFileFilter)
-		.filter((name) => { return !skippingTiddlersSet.has(name) })
+		.filter((checkPageSkip) => { return !skippingTiddlersSet.has(checkPageSkip) })
 		.forEach(function(page) {
-    		console.log(page);
-			try {
-    			http.get({ hostname: 'localhost', port: port, path: '/Zoracraft',}, (response) => {
-	   				//writeFile('./html/Zoracraft.html', response);
+    		let pageTitle = page.replace('.tid', '');
+    		let path = encodeURI(`/${pageTitle}`);
+    		try {
+    			http.get({ hostname: 'localhost', port: port, path: path}, (response) => {
+	   				writeFile(`./html/${pageTitle}.html`, response);
     			});
 			} catch (error) {
   				console.error(error);
