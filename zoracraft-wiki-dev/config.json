@@ -1,0 +1,14 @@
+{
+	"port": 8080,
+	"directories": {
+		"tiddlers": "./tiddlers"
+	},
+	"skipTiddlers": ["$__config_PageControlButtons_Visibility_$__core_ui_Buttons_import.tid",
+					"$__config_PageControlButtons_Visibility_$__core_ui_Buttons_new-image.tid",
+					"$__DefaultTiddlers.tid",
+					"$__Import.tid",
+					"$__language_DefaultNewTiddlerTitle.tid",
+					"$__SiteSubtitle.tid",
+					"$__SiteTitle.tid",
+					"$__StoryList.tid"]
+}
