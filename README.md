@@ -12,9 +12,11 @@
 
 2. Install [TiddlyWiki](https://tiddlywiki.com/): `npm install -g tiddlywiki`
 
-3. Launch TiddlyWiki node.js server on localhost: `tiddlywiki wikifolder --listen` Choose port by adding ` port=####` 
+3. Launch TiddlyWiki node.js server on localhost: `tiddlywiki wikifolder --listen port=8080` 
 
 4. Open browser to TiddlyWiki instance. Default location: http://127.0.0.1:8080/
+
+5. Start editing!! :D More steps to follow.
 
 -----
 
