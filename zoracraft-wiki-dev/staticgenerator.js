@@ -9,13 +9,7 @@ const { readdir } = require('fs');
 const { writeFile } = require('fs/promises');
 
 const { port, directories, skipTiddlers } = require('./config.json');
-
 const skippingTiddlersSet = new Set(skipTiddlers);
-
-function tiddlyFileFilter(file) {
-  let ext = path.extname(file);
-  return ext === '.tid'
-};
 
 readdir(directories.tiddlers, (error, tiddlers) => {
 	if (error)
@@ -29,7 +23,20 @@ readdir(directories.tiddlers, (error, tiddlers) => {
     		let path = encodeURI(`/${pageTitle}`);
     		try {
     			http.get({ hostname: 'localhost', port: port, path: path}, (response) => {
-	   				writeFile(`./html/${pageTitle}.html`, response);
+    				
+    				let htmldata = '';
+  					response.setEncoding('utf8');
+
+  					response.on('data', (chunk) => {
+    					htmldata += chunk;
+  					});
+
+  					response.on('close', () => {
+    					htmlstring = htmldata.replace('%24%3A%2Fcore%2Ftemplates%2Fstatic.template.css','template.css');
+    					writeFile(`./html/${pageTitle}.html`, htmlstring);
+	   					console.log(`Created static .html for ${pageTitle}`);
+  					});
+  					
     			});
 			} catch (error) {
   				console.error(error);
@@ -37,3 +44,8 @@ readdir(directories.tiddlers, (error, tiddlers) => {
 		})
 	}
 });
+
+function tiddlyFileFilter(file) {
+  let ext = path.extname(file);
+  return ext === '.tid'
+};
